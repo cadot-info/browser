@@ -127,7 +127,7 @@ class MyTest extends TestCase
     {
         $this->pantherBrowser()
             ->visit('/my/page')
-            ->assertSuccessful()
+            ->assertSeeElement('h1')
         ;
     }
     
